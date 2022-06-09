@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.mainBox{
+    width: 100%;
+    height: auto;
+}
+
+.mainBox .inputBox{
+    width: 300px;
+    height: auto;
+    margin: 100px auto;
+    padding: 50px 25px;
+    display: flex;
+    flex-direction: column;
+    background: #fefefe;
+    box-shadow: 0 0 15px #c0c0c0;
+}
+
+.mainBox .inputBox h3{
+    text-align: center;
+    color: #cd5d00;
+    font-family: monospace;
+    font-size: 19px;
+}
+
+.mainBox .inputBox input{
+    margin: 20px 0;
+    padding: 5px;   
+    box-shadow: 2px 2px 1px #bfbfbf;
+    border: 1px solid #cd5d00;
+}
+
+.mainBox .inputBox .button{
+    background: rgb(255, 123, 0);
+    padding: 8px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    box-shadow: 2px 2px 1px #bfbfbf;
+    font-family: monospace;
+}
+
+.mainBox .inputBox .button:hover{
+    cursor: pointer;
+    background: rgb(255, 145, 0);
+    box-shadow: none;
+}
+
+.mainBox .outputBox{
+    width: 300px;
+    height: auto;
+    margin: 100px auto;
+    padding: 50px 25px;
+    background: #fefefe;
+    box-shadow: 0 0 15px #c0c0c0;
+    display: none;
+    justify-content: center;
+} 
+
+.mainBox .outputBox h1{
+    text-align: center;
+    font-family: monospace;
+}
