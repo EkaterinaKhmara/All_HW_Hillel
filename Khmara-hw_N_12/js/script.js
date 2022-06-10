@@ -1,4 +1,6 @@
-function clickButton(){
+const btn = document.getElementById("but");
+
+btn.onclick = function clickButton(){
     const inputVal = document.getElementById("item");
     const ulVal = document.getElementById("ulList");
 
@@ -10,3 +12,4 @@ function clickButton(){
         inputVal.style.border = "3px solid red";
     }
 }
+
