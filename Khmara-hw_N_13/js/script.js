@@ -1,7 +1,7 @@
 const btn = document.getElementById("but");
 const inputVal = document.getElementById("item");
 const ulVal = document.getElementById("ulList");
-const DelAllBut = document.getElementById("butDelAll");
+const delAllBut = document.getElementById("butDelAll");
 const doneAllTask = document.getElementById("butDoneAll");
 
 function clickAddButt(){
@@ -65,4 +65,4 @@ btn.addEventListener("click", clickAddButt);
 
 doneAllTask.addEventListener("click", selectAllLabels);
 
-DelAllBut.addEventListener("click", clickDelButt);
+delAllBut.addEventListener("click", clickDelButt);
