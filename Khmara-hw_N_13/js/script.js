@@ -11,7 +11,7 @@ function clickAddButt(){
         <input type="checkbox" onclick="eventChkbox(event)" name="todoList">
         <label>${inputVal.value}</label>
         <button class="butDel" onclick="delSomeTask(event)"><b>Delete</b></button></li>`);
-        inputVal.value = "";     
+        inputVal.value = "";
     }else{
         inputVal.style.border = "3px solid red";
     }
