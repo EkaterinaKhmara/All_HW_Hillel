@@ -18,11 +18,8 @@ function validEmail(){
 
 inputMail.onblur = function() {
     if (!validEmail(inputMail.value)){
-        console.log("no");
         errorMail.innerHTML = "Incorrect Email";
         inputMail.style.border = "2px solid red";
-    }else{
-        console.log("yes");
     }
 };
 
