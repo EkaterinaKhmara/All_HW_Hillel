@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/signin.js" defer></script>
+</head>
+<body>
+    <div class="mainBox" id="mainBox">
+        <div class="loginForm" id="loginForm"> 
+            <h2>Sign In</h2>
+            <div class="form">
+                <input id="iEmail" type="email" placeholder="Email">
+                <span class="invalidMail" id="wrongMail"></span>
+                <input id="iPass" type="text" placeholder="Password">
+                <span class="inputError" id="enterError">Incorrect login or password</span>
+                <button class="button" id="loginBut"><b>Sign In</b></button>
+            </div>
+        </div>
+        <div class="inputBox" id="inputBox">
+            <h2>Add an item to the list</h2>
+            <div class="form">
+                <input id="item" type="text" placeholder="Item">
+                <button class="button" id="but"><b>Add to list</b></button>
+            </div>
+            <div class="buttons">
+                <button class="buttonDel" id="butDelAll"><b>Delete all</b></button>
+                <button class="buttonDone" id="butDoneAll"><b>Mark all task</b></button>
+            </div>
+            <div class="outputBox" id="outputBox">
+                <h2>TODO:</h2>
+                <ul id="ulList"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
