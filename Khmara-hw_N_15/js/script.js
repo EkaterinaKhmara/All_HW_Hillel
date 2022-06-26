@@ -25,9 +25,12 @@ function calc(a){
 
 const first = calc(4);
 
-console.log("add 33 + 4 = " + first.add(33));
-console.log("sub 12 - 4 = " + first.sub(12));
-console.log("div 2 / 4 = " + first.div(2));
-console.log("mult 4 * 4 = " + first.mult(4));
+console.log("object return = ");
+console.log(first);
 
-console.log("result (((4 + 33) - 12) / 2) * 4 = " + first.getResult(4,33,12,2,4));
+console.log("function add: 33 + 4 = " + first.add(33));
+console.log("function sub: 12 - 4 = " + first.sub(12));
+console.log("function div: 2 / 4 = " + first.div(2));
+console.log("function mult: 4 * 4 = " + first.mult(4));
+
+console.log("function getResult: (((4 + 33) - 12) / 2) * 4 = " + first.getResult(4,33,12,2,4));
