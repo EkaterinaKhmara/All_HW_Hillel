@@ -9,70 +9,106 @@ function bootstrap(){
   const topSpices = new Spices(15, 0);
   const topMayo = new Mayo(20, 5);
 
-  const hamburger = new Hamburger(sizeMedium);
+  const hamburgerS = new Hamburger(sizeSmall);
+  const hamburgerM = new Hamburger(sizeMedium);
+  const hamburgerL = new Hamburger(sizeLarge);
 
-  hamburger.addTopping(topSalad);
-  hamburger.addTopping(topPotato);
+  hamburgerS.addTopping(topSalad);
+  hamburgerS.addTopping(topPotato);
 
-  console.log('Price with sauce: ' + hamburger.getPrice());
-  console.log('Callories with sauce: ' + hamburger.getCallories());
+  hamburgerM.addTopping(topCheese);
+  hamburgerM.addTopping(topSpices);
+
+  hamburgerL.addTopping(topSalad);
+  hamburgerL.addTopping(topMayo);
+  hamburgerL.addTopping(topCheese);
+
+  printBurg(hamburgerS);
+  printBurg(hamburgerM);
+  printBurg(hamburgerL);
+
 }
 
 bootstrap();
 
 function SmallBurg(price, callories){
+  this.name = "Small";
   this.price = price;
   this.callories = callories;
 }
 
 function MediumBurg(price, callories){
+  this.name = "Medium";
   this.price = price;
   this.callories = callories;
 }
 
 function LargeBurg(price, callories){
+  this.name = "Large";
   this.price = price;
   this.callories = callories;
 }
 
+function printBurg(hamburger){
+    console.log(`
+    Your Burger: ${hamburger.getType().name}
+    Price: $${hamburger.getPrice()} 
+    Callories: kcal ${hamburger.getCallories()}
+    Additional topping(s): ${hamburger.getTopp()} `);
+}
+
 function Hamburger(type){
+  let toppings = [];
   let callories = type.callories;
   let price = type.price;
   return {
     addTopping: (topping) => {
       callories = callories + topping.callories;
       price = price + topping.price;
+      toppings.push(topping.name)
     },
     getCallories: () => {
       return callories;
     },
     getPrice: () => {
       return price;
+    },
+    getType: () => {
+      return type;
+    },
+    getTopp: () => {
+      return toppings;
     }
+
   }
 };
   
 function Cheese(price, callories){
+  this.name = "Cheese";
   this.price = price;
   this.callories = callories;
 }
 
 function Salad(price, callories){
+  this.name = "Salad";
   this.price = price;
   this.callories = callories;
 }
 
 function Potato(price, callories){
+  this.name = "Potato";
   this.price = price;
   this.callories = callories;
 }
 
 function Spices(price, callories){
+  this.name = "Spices";
   this.price = price;
   this.callories = callories;
 }
 
 function Mayo(price, callories){
+  this.name = "Mayo";
   this.price = price;
   this.callories = callories;
 }
