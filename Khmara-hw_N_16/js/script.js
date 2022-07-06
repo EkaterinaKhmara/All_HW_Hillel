@@ -26,7 +26,6 @@ function bootstrap(){
   printBurg(hamburgerS);
   printBurg(hamburgerM);
   printBurg(hamburgerL);
-
 }
 
 bootstrap();
@@ -79,7 +78,6 @@ function Hamburger(type){
     getTopp: () => {
       return toppings;
     }
-
   }
 };
   
