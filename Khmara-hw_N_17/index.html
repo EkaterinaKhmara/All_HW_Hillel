@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/back.js" defer></script>
+    <script src="js/entities.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="firstBox" id="firstBox">
+        <div class="store" id="store">
+            <h1>Store</h1>
+            <div class="tableBox">
+                <table>
+                    <thead>
+                        <tr>
+                            <td class="tdHead">Product</td>
+                            <td class="tdHead">Price</td>
+                            <td class="tdHead"></td>
+                        </tr>   
+                    </thead>
+                    <tbody id="products">
+                        <tr class="tr" >
+                        </tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="cart" id="cart">
+            <h1>Shopping cart</h1>
+
+            <div class="cartList">
+                <table class="tableList" id="tableList"></table>
+            </div>
+
+            <div class="finOrder">
+                <button class="placeOrder" id="placeOrder">Go to checkout</button>
+                <span class="totalSum num" id="totalSum">0</span><span class="totalSum"> $</span>
+            </div> 
+        </div>
+    </div>
+
+    <div class="secondBox" id="secondBox">
+
+        <div class="orders" id="orders">
+            <button class="ordersBut" id="ordersBut">My orders</button>
+        <div class="ordersBox">
+
+            <div class="myOrdersBox">
+                <ul class="myOrders"></ul>
+            </div>
+
+            <div class="showOrder">
+                <table id="theadHidden">
+                    <thead>
+                        <tr>
+                            <td class="tdHead">Product</td>
+                            <td class="tdHead">Price</td>
+                            <td class="tdHead">Quantity</td>
+                        </tr>   
+                    </thead>
+                    <tbody id="prodOrders">
+                        <tr class="tr">
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        </div> 
+    </div>
+</body>
+</html>
