@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("../img/bg-n.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+img{
+    height: 250px;
+}
+
+.firstBox{
+    width: 100%;
+    padding: 180px;
+}
+
+.firstBox .clock{
+    width: 1300px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.firstBox .clock .timeBox{
+    display: flex;
+}
