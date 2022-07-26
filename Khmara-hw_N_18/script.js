@@ -7,7 +7,11 @@ class NewElement {
   createEl(){
       const box = document.createElement(this.tag);
       Object.entries(this.attributes).forEach(([key, val]) => {
-        box.setAttribute(key, val);
+        if (key === 'className'){
+          box.setAttribute('class', val);
+        }else{
+          box.setAttribute(key, val);
+        }
       });
       box.innerHTML = this.innerHtml;
       return box;
@@ -23,7 +27,7 @@ const element = new NewElement(
   'Hello from my Function', 
   {
     id: 'myId',
-    class: 'myClass',
+    className: 'myClassName',
     align: 'center'
   }
 );
