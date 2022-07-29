@@ -17,10 +17,7 @@ let arrPic = [
 const bgDiv = document.getElementById('box');
 const prev = document.getElementById('arrowPrev');
 const next = document.getElementById('arrowNext');
-const min = 0;
-const max = 13;
-let currentImage = getRndInteger(min, max);
-let picInArrNum = Number(arrPic[currentImage].replace(/[^0-9]/g,""));
+let currentImage = getRndInteger(0, arrPic.length - 1);
 const imageElement = createAlbumImage();
 let intervalId = setInterval(changeImages, 3000);
 
@@ -30,30 +27,30 @@ function getRndInteger(min, max) {
 
 function createAlbumImage(){
     const image = document.createElement('img');
-    image.setAttribute('src', `img/${picInArrNum}.jpg`); 
+    image.setAttribute('src', arrPic[currentImage]); 
     const parent = document.getElementById('main');
-    bgDiv.style.background = `url(img/${picInArrNum}.jpg) center center / cover no-repeat`; 
+    bgDiv.style.background = `url(${arrPic[currentImage]}) center center / cover no-repeat`; 
     parent.appendChild(image);
     return image;
 }
 
 function changeImages(){
-    picInArrNum++;
-        if(picInArrNum + 1 > max){
-            picInArrNum = min;
+    currentImage++;
+        if(currentImage + 1 > arrPic.length){
+            currentImage = 0;
         }
-        imageElement.setAttribute('src', `img/${picInArrNum}.jpg`);
-        bgDiv.style.background = `url(img/${picInArrNum}.jpg) center center / cover no-repeat`; 
+        imageElement.setAttribute('src', arrPic[currentImage]);
+        bgDiv.style.background = `url(${arrPic[currentImage]}) center center / cover no-repeat`; 
 }
 
 function clickPrev(){
     clearInterval(intervalId);
-    picInArrNum--;
-    if(picInArrNum < 0){
-        picInArrNum = max;
+    currentImage--;
+    if(currentImage < 0){
+        currentImage = arrPic.length-1;
     }
-    imageElement.setAttribute('src', `img/${picInArrNum}.jpg`);
-    bgDiv.style.background = `url(img/${picInArrNum}.jpg) center center / cover no-repeat`; 
+    imageElement.setAttribute('src', arrPic[currentImage]);
+    bgDiv.style.background = `url(${arrPic[currentImage]}) center center / cover no-repeat`; 
     intervalId = setInterval(changeImages, 3000);
 }
 
@@ -61,6 +58,7 @@ function clickNext(){
     clearInterval(intervalId);
     changeImages();
     intervalId = setInterval(changeImages, 3000);
+
 }
 
 prev.addEventListener('click', clickPrev);
