@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: monospace;
+    font-size: 16px;
+    background: radial-gradient(at center center, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 244, 226), rgb(255, 240, 211), rgb(255, 227, 214), rgb(255, 224, 224), rgb(255, 214, 241), rgb(242, 221, 255));  
+}
+
+.gifO{
+    position: absolute;
+    right: 10%;
+    width: 16%;
+}
+
+.gifT{
+    position: absolute;
+    left: 10%;
+    width: 15%;
+    transform: scale(-1, 1);
+    top: 31%;
+}
+
+.main{
+    width: 100%;
+    height: auto;
+}
+
+.main .form{
+    width: 500px;
+    height: auto;
+    margin: 100px auto;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0px 0px 10px #a1a1a1;
+    border-radius: 10px;
+    background: white;
+}
+
+.main .form .formBox{
+    width: 100%;
+    padding: 30px;
+}
+
+.main .form .formBox input, .main .form .formBox textarea{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 3px #8f8f8f;
+    border: none;
+    border-radius: 5px;
+}
+
+.main .form .formBox textarea{
+    resize: vertical;
+}
+
+.main .formBox .optionButton{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .formBox .optionButton .priority{
+    display: flex;
+    width: 155px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+select{
+    padding: 5px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn{
+    width: 35%;
+    padding: 5px;
+    background: #ff8d00;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #ff8600;
+    box-shadow: 0px 0px 3px #6e6e6e;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnSave{
+    display: none;
+}
+
+.createBtn:disabled{
+    border: 1px solid #999999;
+    background: #cccccc;
+    color: #666666;
+  }
+
+.mainCards{
+    width: 100%;
+    height: auto;
+}
+
+.mainCards h1{
+    text-align: center;
+    margin: 30px 0 50px;
+}
+
+.mainCards .cards{
+    width: 1300px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.mainCards .cards .card{
+    width: 390px;
+    background: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #d7d7d7;
+    margin: 20px;
+}
+
+.mainCards .cards .card .priority, .mainCards .cards .card .status{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.mainCards .cards .card .titleText{
+    width: 100%;
+    text-align: center;
+}
+
+.mainCards .cards .card .divSelects{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.mainCards .cards .card .buttons{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 0;
+}

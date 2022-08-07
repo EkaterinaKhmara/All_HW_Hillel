@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/addElem.js" defer></script>
+    <script src="js/funcRenderSelect.js" defer></script>
+    <script src="js/funcBtns.js" defer></script>
+    <script src="js/script.js" defer></script>    
+</head>
+<body>
+    <div class="main">  
+        <img class="gifO" src="/gif/funny.gif" alt="funny">
+        <img class="gifT" src="/gif/puppy.gif" alt="dog">
+
+        <div class="form">
+            <h1>New Task</h1>
+            <div class="formBox">
+                <input type="text" placeholder="Title" id="title">
+                <textarea id="descript" cols="30" rows="5" placeholder="Description"></textarea>
+                <div class="optionButton">
+                    <div class="priority def">
+                        <p>Priority: <p>
+                        <select id="selPrior">
+                            <option value="low">Low</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+                    <button class="btn createBtn" id="btnCreate">Create task</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainCards" id="mainCards">
+        <h1>My Tasks</h1>
+        <div class="cards" id="cards"></div>
+    </div> 
+
+</body>
+</html>
