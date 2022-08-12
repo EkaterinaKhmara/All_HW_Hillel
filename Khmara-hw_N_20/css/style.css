@@ -95,7 +95,7 @@ select{
     display: none;
 }
 
-.createBtn:disabled{
+.btn:disabled{
     border: 1px solid #999999;
     background: #cccccc;
     color: #666666;
