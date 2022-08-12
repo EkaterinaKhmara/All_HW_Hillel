@@ -10,20 +10,6 @@ body{
     background: radial-gradient(at center center, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 244, 226), rgb(255, 240, 211), rgb(255, 227, 214), rgb(255, 224, 224), rgb(255, 214, 241), rgb(242, 221, 255));  
 }
 
-.gifO{
-    position: absolute;
-    right: 10%;
-    width: 16%;
-}
-
-.gifT{
-    position: absolute;
-    left: 10%;
-    width: 15%;
-    transform: scale(-1, 1);
-    top: 31%;
-}
-
 .main{
     width: 100%;
     height: auto;
