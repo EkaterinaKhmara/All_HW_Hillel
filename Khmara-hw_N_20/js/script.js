@@ -184,7 +184,7 @@ function clickBtnCreate(event){
     const btnParent = event.currentTarget.parentNode.parentNode;
     const inputTitle = btnParent.querySelector('input');
     const textareaText = btnParent.querySelector('textarea');
-    const sel = btnParent.querySelector('.selPrior')''
+    const sel = btnParent.querySelector('.selPrior');
 
     if(textareaText.value.length === 0){
         textareaText.value = '...';
