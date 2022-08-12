@@ -184,10 +184,7 @@ function clickBtnCreate(event){
     const btnParent = event.currentTarget.parentNode.parentNode;
     const inputTitle = btnParent.querySelector('input');
     const textareaText = btnParent.querySelector('textarea');
-    const sel = btnParent.querySelector('.selPrior')
-
-    console.log(sel);
-    // console.log(createSelect());
+    const sel = btnParent.querySelector('.selPrior')''
 
     if(textareaText.value.length === 0){
         textareaText.value = '...';
@@ -238,9 +235,6 @@ function selectGenerator(sel, opts){
 
 
 
-
-
-
 function setSelAttr(parentId){
     const cartPrior = document.getElementById(`prior-${parentId}`);
     const cartPriorB = cartPrior.querySelector('b');
@@ -273,14 +267,6 @@ function setSelAttr(parentId){
         }
     });
 }
-
-
-
-
-
-
-
-
 
 
 
