@@ -1,0 +1,72 @@
+[
+	{
+		"id": 100,
+        "src": "../img/1.jpg",
+		"name": "Sue Corts",
+		"age": "39",
+		"sex": "Female"
+	},
+    {
+		"id": 101,
+        "src": "../img/2.jpg",
+		"name": "Madie Polson",
+		"age": "38",
+		"sex": "Female"
+	},
+    {
+		"id": 102,
+        "src": "../img/3.jpg",
+		"name": "Carla Taler",
+		"age": "40",
+		"sex": "Female"
+	},
+    {
+		"id": 103,
+        "src": "../img/4.jpg",
+		"name": "Michale Molton",
+		"age": "41",
+		"sex": "Male"
+	},
+    {
+		"id": 104,
+        "src": "../img/5.jpg",
+		"name": "Sara Tompson",
+		"age": "36",
+		"sex": "Female"
+	},
+    {
+		"id": 105,
+        "src": "../img/6.jpg",
+		"name": "Alisa Miller",
+		"age": "29",
+		"sex": "Female"
+	},
+    {
+		"id": 106,
+        "src": "../img/7.jpg",
+		"name": "Tom Morra",
+		"age": "33",
+		"sex": "Male"
+	},	
+    {
+		"id": 107,
+        "src": "../img/8.jpg",
+		"name": "Paul Harley",
+		"age": "25",
+		"sex": "Male"
+	},
+    {
+		"id": 108,
+        "src": "../img/9.jpg",
+		"name": "Marta Jackle",
+		"age": "41",
+		"sex": "Female"
+	},
+    {
+		"id": 109,
+        "src": "../img/10.jpg",
+		"name": "Ray Gilton",
+		"age": "34",
+		"sex": "Male"
+	}
+]
