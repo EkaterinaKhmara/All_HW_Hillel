@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+ .Digits{
+    margin-bottom: 45px;
+  }
+  
+ .Digits button{
+    width: 95px;
+    padding: 20px;
+    margin: 5px;
+    font-size: 20px;
+    color: #001350;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 1px solid #c1c1c1;
+    cursor: pointer;
+  }
+  
+  .Digits button:hover{
+    background: #c0c0c0;
+    cursor: pointer;
+  }
+
+  .Digits .Orange{
+    background: rgb(255 129 0);
+    color: white !important;
+  }
+
+  .Digits .Orange:hover{
+    background: rgb(255, 169, 39)
+  }

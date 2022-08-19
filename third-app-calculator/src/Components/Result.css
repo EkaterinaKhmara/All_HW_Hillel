@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .Result{
+    width: 410px;
+    height: 70px;
+    background: #fbfbfb;
+    text-align: right;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 25px;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 5px #ababab;
+    margin: 50px 0 25px;
+  }
