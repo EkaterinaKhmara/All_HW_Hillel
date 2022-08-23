@@ -1,0 +1,48 @@
+form {
+    width: 500px;
+    height: auto;
+    margin: 100px auto 0;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px #b9b9b9;
+    border-radius: 15px;
+}
+
+form input {
+    width: 339px;
+    padding: 4px;
+}
+
+textarea {
+    padding: 4px;
+}
+
+.SelDiv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Ptext {
+    text-align: center;
+    margin: 0;
+}
+
+select {
+    padding: 5px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    background: #ff9900;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
