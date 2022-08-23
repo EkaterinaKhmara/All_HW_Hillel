@@ -3,7 +3,6 @@ import { func, string } from 'prop-types';
 import { generateOptions } from '../../helpers/itemGenerators';
 import { PRIORITIES, STATUSES } from '../../constants/itemConstants';
 import './ItemCard.css'
-import { toHaveDisplayValue } from '@testing-library/jest-dom/dist/matchers';
 
 export default class ItemCard extends Component {
 
@@ -29,22 +28,11 @@ export default class ItemCard extends Component {
     this.setState({
       [`${event.target.getAttribute('name')}EditMode`]: false,
     });
-    console.log(this.props.title);
   }
 
   handleChange = (event) => {
     this.props.onUpdate(this.props.id, { [event.target.name]: event.target.value });
   }
-
-
-//  emptyOrNo = () => {
-//    if (!this.state.title){
-//     this.state.title = 'dfdf'
-//     console.log(this.props.title);
-//   }
-//  }
-
-
 
   render() {
 
