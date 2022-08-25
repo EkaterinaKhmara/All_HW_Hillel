@@ -18,8 +18,11 @@ export default class ItemAddForm extends Component {
 
     this.props.onAdd( { title, description, status, priority } );
 
-    this.state.title = '';
-    this.state.description = '';
+    this.setState({
+      title: '',
+      description: ''
+    })
+    
   }
 
   render() {
