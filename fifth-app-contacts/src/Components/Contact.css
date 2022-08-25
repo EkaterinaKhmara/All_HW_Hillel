@@ -1,0 +1,44 @@
+.Contacts {
+    display: flex;
+}
+
+.Contacts div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    border-left: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
+}
+
+.Contacts .colName {
+    border-left: none;
+}
+
+.Contacts .colFunc {
+    border-right: none;
+}
+
+.Contacts span {
+    padding: 8px 0;
+}
+
+.Contacts .butSpan {
+    padding: 7px 0;
+}
+
+.Contacts h3 {
+    color: #ff8100;
+    margin: 20px 0;
+}
+
+.Contacts button {
+    width: 70px;
+    background: #ff2300;
+    padding: 3px 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 3px #727272;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
