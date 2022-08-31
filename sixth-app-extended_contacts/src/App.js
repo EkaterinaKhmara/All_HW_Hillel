@@ -5,8 +5,6 @@ import EditContact from './pages/EditContact/EditContact.js';
 import { useEffect, useState } from 'react';
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
 
-
-
 function App() {
 
   let navigate = useNavigate();
