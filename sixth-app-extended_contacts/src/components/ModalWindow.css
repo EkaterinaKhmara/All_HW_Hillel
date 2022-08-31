@@ -1,0 +1,50 @@
+.Modal {
+    display: none;
+}
+
+.Modal .ModBox {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.255);
+}
+
+.Visible {
+    display: block;
+}
+
+.Modal .BoxText {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgb(255 255 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 1000px #000000;
+}
+
+.Modal .BoxText div {
+    display: flex;
+}
+
+.Modal .BoxText div button {
+    width: 150px;
+    margin: 30px;
+    padding: 10px 20px;
+    background: #ff8100;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 3px #727272;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}

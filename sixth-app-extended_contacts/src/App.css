@@ -1,0 +1,52 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px;
+}
+
+.Panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.Panel button {
+  width: 190px;
+  margin: 30px;
+  padding: 10px 20px;
+  background: #ff8100;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 3px #727272;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Box {
+  padding: 15px 15px 25px;
+  box-shadow: 4px 4px 10px #a7a7a7;
+}
+
+#Error {
+  display: none;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0 20px;
+}
+
+h2 {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 24px;
+  color: #2D783A;
+}

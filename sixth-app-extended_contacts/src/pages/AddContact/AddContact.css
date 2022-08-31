@@ -1,0 +1,38 @@
+.BoxItem .Item {
+    width: 100%;
+}
+
+.BoxItem .Item h3 {
+  color: #ff8100;
+  margin: 10px 20px;
+}
+
+.BoxItem .Item input{
+  border: 1px solid rgb(189, 189, 189);
+  box-shadow: 2px 2px 3px #727272;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px 20px;
+}
+
+.BoxItem .Item .butSave, .BoxItem .Item .butCancel {
+  width: 70px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 3px #727272;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 15px 0 5px;
+}
+
+.BoxItem .Item .butSave {
+  margin: 23px 20px 10px;
+  background: #2d783a;;
+}
+
+.BoxItem .Item .butCancel {
+  margin: 23px 26px 10px;
+  background: #ff2300;
+}
